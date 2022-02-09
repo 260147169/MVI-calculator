@@ -5,8 +5,9 @@
 <title>MVI Calculator</title>
 <style>
 .label {font-family:"Times New Roman";font-size:1.25em;margin-bottom:0em;margin-right:0em;display:inline}
-.input_text {font-family:"Times New Roman";float:right;width:25%;display:inline}
+.input_text {font-family:"Times New Roman";float:right;width:25%}
 .input_range {width:100%}
+.unit {float:right}
 .button {width:30%}
 .center {font-family:"Times New Roman";text-align:center;font-size:1.25em}
 #header {background-color:#323232;color:white;text-align:center;padding:3px;font-family:"Times New Roman";font-size:2em}
@@ -21,7 +22,7 @@
 
 <div>
 <form>
-<p class='label'><b>Maximum image diameter:</b></p>
+<p class='label'><b>Maximum image diameter (cm):</b></p>
 <input type='text' id='Max_text' class='input_text'>
 <!-- <input type='range' id='Max_range' min='0' max='17.5' step='0.01' value='0' class='input_range'> -->
 </form>
@@ -29,7 +30,7 @@
 
 <div>
 <form>
-<p class='label'><b>PIVKA-Ⅱ:</b></p>
+<p class='label'><b>PIVKA-Ⅱ (mAU/ml):</b></p>
 <input type='text' id='PIVKA_text' class='input_text'>
 <!-- <input type='range' id='PIVKA_range' min='0' max='2000' step='0.01' value='0' class='input_range'> -->
 </form>
@@ -37,7 +38,7 @@
 
 <div>
 <form>
-<p class='label'><b>AFP:</b></p>
+<p class='label'><b>AFP (ng/ml):</b></p>
 <input type='text' id='AFP_text' class='input_text'>
 <!-- <input type='range' id='AFP_range' min='0' max='1200' step='0.01' value='0' class='input_range'> -->
 </form>
@@ -45,7 +46,7 @@
 
 <div>
 <form>
-<p class='label'><b>Satellite ovens:</b></p>
+<p class='label'><b>Satellite nodules:</b></p>
 </br>
 <input type='radio' name='SO_text' value='0' checked><p style='font-size:1.25em;margin-bottom:0em;margin-right:0em;display:inline'>Negative</p>
 </br>
@@ -63,7 +64,7 @@
 
 <div>
 <form>
-<p class='label'><b>AST:</b></p>
+<p class='label'><b>AST (IU/L):</b></p>
 <input type='text' id='AST_text' class='input_text'>
 <!-- <input type='range' id='AST_range' min='0' max='10' step='0.01' value='0' class='input_range'> -->
 </form>
@@ -81,7 +82,7 @@
 
 <div>
 <form>
-<p class='label'><b>TBA:</b></p>
+<p class='label'><b>TBA (μmol/L):</b></p>
 <input type='text' id='TBA_text' class='input_text'>
 <!-- <input type='range' id='TBA_range' min='0' max='100' step='0.01' value='0' class='input_range'> -->
 </form>
@@ -89,7 +90,7 @@
 
 <div>
 <form>
-<p class='label'><b>PLT:</b></p>
+<p class='label'><b>PLT (×10^9/L):</b></p>
 <input type='text' id='PLT_text' class='input_text'>
 <!-- <input type='range' id='PLT_range' min='0' max='600' step='0.01' value='0' class='input_range'> -->
 </form>
@@ -97,7 +98,7 @@
 
 <div>
 <form>
-<p class='label'><b>GGT:</b></p>
+<p class='label'><b>GGT (IU/L):</b></p>
 <input type='text' id='GGT_text' class='input_text'>
 <!-- <input type='range' id='GGT_range' min='0' max='400' step='0.01' value='0' class='input_range'> -->
 </form>
@@ -105,7 +106,7 @@
 
 <div>
 <form>
-<p class='label'><b>APTT:</b></p>
+<p class='label'><b>APTT (s):</b></p>
 <input type='text' id='APTT_text' class='input_text'>
 <!-- <input type='range' id='APTT_range' min='0' max='400' step='0.01' value='0' class='input_range'> -->
 </form>
@@ -113,7 +114,7 @@
 
 <div>
 <form>
-<p class='label'><b>HBDH:</b></p>
+<p class='label'><b>HBDH (IU/L):</b></p>
 <input type='text' id='HBDH_text' class='input_text'>
 <!-- <input type='range' id='HBDH_range' min='0' max='400' step='0.01' value='0' class='input_range'> -->
 </form>
@@ -121,7 +122,7 @@
 
 <div>
 <form>
-<p class='label'><b>MCV:</b></p>
+<p class='label'><b>MCV (fL):</b></p>
 <input type='text' id='MCV_text' class='input_text'>
 <!-- <input type='range' id='MCV_range' min='0' max='10' step='0.01' value='0' class='input_range'> -->
 </form>
@@ -130,7 +131,7 @@
 
 <div>
 <form>
-<p class='label'><b>WBC:</b></p>
+<p class='label'><b>WBC (×10^9/):</b></p>
 <input type='text' id='WBC_text' class='input_text'>
 <!-- <input type='range' id='WBC_range' min='0' max='400' step='0.01' value='0' class='input_range'> -->
 </form>
